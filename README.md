@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cat Catalog
 
-## Getting Started
+A web application built with Next.js, TypeScript, and Tailwind CSS to display a list of cat breeds and their details using The Cat API. This project fulfills the requirements of the Cat Catalog exercise, which involves creating a React-based application with a Home screen listing cat breeds and a detail screen showing information about a selected breed.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Home Screen**: Displays a list of cat breeds fetched from The Cat API. Each breed name is clickable, leading to the detail screen.
+- **Cat Breed Detail Screen**: Shows the selected breed’s name, image, origin, life span, and description, with a "Back to Home" button.
+- **Responsive Design**: Styled using Tailwind CSS for a clean and responsive user interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Optional Features (Not Implemented)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Search functionality for cat breeds on the Home screen.
+- Additional UX improvements (e.g., loading states, error handling).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
 
-## Learn More
+- **Node.js**: Version 16 or higher.
+- **npm** or **yarn**: For installing dependencies.
+- **The Cat API Key**: A free API key from [The Cat API](https://thecatapi.com/) is required to fetch breed data and images.
 
-To learn more about Next.js, take a look at the following resources:
+## Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow these steps to set up and run the project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the Repository**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/your-username/cat-catalog.git
+   cd cat-catalog
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
