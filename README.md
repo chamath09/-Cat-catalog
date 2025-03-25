@@ -16,8 +16,6 @@
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
 - [Future Improvements](#-future-improvements)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ---
 
