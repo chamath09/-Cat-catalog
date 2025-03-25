@@ -35,9 +35,7 @@ export default async function BreedPage({ params }: BreedPageProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 p-6 flex  justify-center">
       <div className="max-w-sm w-full mx-auto">
-        {/* Breed Details Card with Animation */}
         <div className="bg-white rounded-xl shadow-2xl p-6 transform transition-all duration-500 hover:shadow-xl animate-fade-in border border-gray-400">
-          {/* Breed Name with Back Arrow */}
           <h1 className="text-2xl font-extrabold text-gray-800 mb-4 flex items-center justify-between">
             <Link href="/">
               <div className="flex items-center text-gray-600 hover:text-gray-800 transform hover:scale-110 transition duration-300">
@@ -60,7 +58,6 @@ export default async function BreedPage({ params }: BreedPageProps) {
             <span className="flex-1 text-center">{breed.name}</span>
           </h1>
 
-          {/* Breed Image */}
           {breed.image?.url ? (
             <div className="relative w-full h-56 mb-4 rounded-lg overflow-hidden shadow-md">
               <Image
@@ -78,7 +75,6 @@ export default async function BreedPage({ params }: BreedPageProps) {
             </div>
           )}
 
-          {/* Breed Details */}
           <div className="space-y-3">
             {/* Origin */}
 <div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
@@ -86,13 +82,11 @@ export default async function BreedPage({ params }: BreedPageProps) {
   <p className="text-base font-semibold text-gray-600">{breed.origin}</p>
 </div>
 
-{/* Life Span */}
 <div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
   <p className="text-s font-medium text-gray-950 uppercase tracking-wide">Life Span :</p>
   <p className="text-base font-semibold text-gray-600">{breed.life_span} years</p>
 </div>
 
-            {/* Description */}
             <div className="pt-1">
               <p className="text-s font-medium text-gray-900 uppercase tracking-wide">Description</p>
               <p className="mt-1 text-sm text-gray-600 leading-relaxed">{breed.description}</p>
