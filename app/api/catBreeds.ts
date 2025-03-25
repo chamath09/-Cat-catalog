@@ -13,10 +13,13 @@ export interface CatBreed {
 }
 
 const API_KEY = process.env.CAT_API_KEY || '';
-const API_URL = 'https://api.thecatapi.com/v1/breeds?limit=20';
+const API_URL = process.env.API_URL || '';
 
 export const fetchCatBreeds = async (): Promise<CatBreed[]> => {
   try {
+    if (!API_URL) {
+      throw new Error('API_URL is not defined');
+    }
     const response = await fetch(API_URL, {
       headers: {
         'x-api-key': API_KEY,
