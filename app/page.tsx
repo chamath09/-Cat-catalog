@@ -17,9 +17,7 @@ export default async function Home() {
               >
                 <Link href={`/breed/${breed.id}`}>
                   <div className="flex justify-between items-center p-4 bg-white rounded-lg shadow hover:bg-gray-50 transition">
-                    <span className="text-lg font-medium">
-                      {breed.name}
-                    </span>
+                    <span className="text-lg font-medium">{breed.name}</span>
                     <svg
                       className="w-5 h-5 text-gray-500"
                       fill="none"

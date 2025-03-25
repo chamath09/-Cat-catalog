@@ -1,6 +1,3 @@
-// app/api/catBreeds.ts
-
-// Define the CatBreed interface directly in this file
 export interface CatBreed {
   id: string;
   name: string;

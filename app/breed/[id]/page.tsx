@@ -1,4 +1,3 @@
-// app/breed/[id]/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 import { fetchCatBreeds } from "../../api/catBreeds";
@@ -16,7 +15,9 @@ export default async function BreedPage({ params }: BreedPageProps) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-200 p-6 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">Breed Not Found</h1>
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            Breed Not Found
+          </h1>
           <p className="text-lg text-gray-500">
             The cat breed you are looking for does not exist.
           </p>
@@ -71,25 +72,38 @@ export default async function BreedPage({ params }: BreedPageProps) {
             </div>
           ) : (
             <div className="w-full h-56 bg-gray-200 rounded-lg flex items-center justify-center mb-4 shadow-md">
-              <span className="text-gray-500 text-base">No image available</span>
+              <span className="text-gray-500 text-base">
+                No image available
+              </span>
             </div>
           )}
 
           <div className="space-y-3">
-            {/* Origin */}
-<div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
-  <p className="text-s font-medium text-gray-950 uppercase tracking-wide">Origin :</p>
-  <p className="text-base font-semibold text-gray-600">{breed.origin}</p>
-</div>
+            <div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
+              <p className="text-s font-medium text-gray-950 uppercase tracking-wide">
+                Origin :
+              </p>
+              <p className="text-base font-semibold text-gray-600">
+                {breed.origin}
+              </p>
+            </div>
 
-<div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
-  <p className="text-s font-medium text-gray-950 uppercase tracking-wide">Life Span :</p>
-  <p className="text-base font-semibold text-gray-600">{breed.life_span} years</p>
-</div>
+            <div className="border-b border-gray-200 pb-2 flex items-center space-x-2">
+              <p className="text-s font-medium text-gray-950 uppercase tracking-wide">
+                Life Span :
+              </p>
+              <p className="text-base font-semibold text-gray-600">
+                {breed.life_span} years
+              </p>
+            </div>
 
             <div className="pt-1">
-              <p className="text-s font-medium text-gray-900 uppercase tracking-wide">Description</p>
-              <p className="mt-1 text-sm text-gray-600 leading-relaxed">{breed.description}</p>
+              <p className="text-s font-medium text-gray-900 uppercase tracking-wide">
+                Description
+              </p>
+              <p className="mt-1 text-sm text-gray-600 leading-relaxed">
+                {breed.description}
+              </p>
             </div>
           </div>
         </div>
