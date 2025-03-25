@@ -159,6 +159,19 @@ cat-catalog/
 - **Dark Mode**: Add a dark mode toggle for improved accessibility.
 - **Testing**: Incorporate unit and integration tests using Jest or Cypress.
 
+<<<<<<< HEAD
 ---
 
 
+=======
+## 📸 Screenshots
+
+![Home Page](public/homepage.png)
+![Breed Detail Page](public/breed-detail.png)
+
+
+---
+
+
+
+>>>>>>> baaaabf (Readme File updated with images)
